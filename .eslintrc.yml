@@ -1,0 +1,26 @@
+env:
+  node: true
+  es2020: true
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:prettier/recommended
+  - prettier/@typescript-eslint
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2020
+plugins:
+  - '@typescript-eslint'
+  - prettier
+rules:
+  no-use-before-define: 'off'
+  no-unused-vars: 'off'
+  '@typescript-eslint/indent':
+    - 2
+    - 2
+  '@typescript-eslint/no-empty-function':
+    - error
+    - allow:
+        - 'private-constructors'
+  '@typescript-eslint/no-use-before-define':
+    - error
