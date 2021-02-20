@@ -1,4 +1,4 @@
-import { RequestHandler, response } from 'express';
+import { RequestHandler } from 'express';
 import * as _ from 'lodash';
 import { Todo } from '../models/todo';
 
